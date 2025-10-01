@@ -1,0 +1,23 @@
+{
+  "extends": ["eslint:recommended", "airbnb-base"],
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "rules": {
+    "no-console": "off",
+    "class-methods-use-this": "off",
+    "import/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "js": "always",
+        "mjs": "always"
+      }
+    ],
+    "import/no-extraneous-dependencies": [
+      "error",
+      { "Dependencies": false }
+    ]
+  }
+}
